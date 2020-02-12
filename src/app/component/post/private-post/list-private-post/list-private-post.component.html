@@ -1,0 +1,19 @@
+
+
+
+<div *ngFor="let post of posts | async">
+  <h1 id="title"> {{post.id}} - {{post.title}} </h1>
+  <h2 id="content"> {{post.content}} </h2>
+  <p> by {{post.user.username}} </p>
+  <h4> time {{post.date}} </h4>
+  <button class="btn btn-warning" [routerLink]="['/updatePrivatePost/', post.id]">update</button>
+  <button (click)="deletePost(post.id)" class="btn btn-danger">delete</button>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+
+</div>
+
+

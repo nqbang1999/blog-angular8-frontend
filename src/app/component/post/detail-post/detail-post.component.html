@@ -1,0 +1,22 @@
+<!--<div *ngIf="post" class="blog-post">-->
+<!--  <h2 class="blog-post-title">title: {{post.title}} </h2>-->
+<!--  <p class="content">content: {{post.content}}</p>-->
+
+<!--  <p class="blog-post-meta"><a> by {{post.user.username}}</a></p>-->
+<!--&lt;!&ndash;  <button class="btn btn-success mr-1" [routerLink]="['/getPostDetails/', post.id]">details</button>&ndash;&gt;-->
+<!--&lt;!&ndash;  <button (click)="deletePost(post.id)" class="btn btn-danger">Delete</button>&ndash;&gt;-->
+
+
+<!--</div>-->
+
+
+<div class="card">
+  <div class="card-header">
+    #{{post.user.username}} at {{post.date}}
+  </div>
+  <div class="card-body">
+    <h1 class="card-title">{{post.title}}</h1>
+    <p class="card-text">{{post.content}}</p>
+    <a href="/getAllPostsOrderByDate" class="btn btn-primary">back</a>
+  </div>
+</div>

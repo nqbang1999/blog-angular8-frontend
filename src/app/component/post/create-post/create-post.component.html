@@ -1,0 +1,60 @@
+<!--<div class="container">-->
+<!--  <div class="container-fluid row">-->
+<!--    <div class="col-5" style="margin-bottom: 10px">-->
+<!--      <form (ngSubmit)="createPost()" [formGroup]="createPostForm">-->
+<!--        <div class="form-group">-->
+<!--          <label>Title: </label>-->
+<!--          <input type="text" class="form-control" [(ngModel)]="post.title" formControlName="title"-->
+<!--                 placeholder="enter title...">-->
+<!--        </div>-->
+
+<!--        <div class="form-group">-->
+<!--          <label>Content: </label>-->
+<!--          <input type="text" class="form-control" [(ngModel)]="post.content" formControlName="content"-->
+<!--                 placeholder="enter content...">-->
+<!--        </div>-->
+
+
+
+<!--        <div style="margin-bottom: 20px">-->
+<!--          <button type="submit" class="btn btn-primary">create post</button>-->
+<!--        </div>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="container">
+  <h2>create form</h2>
+  <p>write your post:</p>
+  <form (ngSubmit)="createPost()" [formGroup]="createPostForm">
+    <div class="form-group">
+      <label for="comment">title:</label>
+      <textarea type="text" class="form-control" [(ngModel)]="post.title" formControlName="title"
+                placeholder="enter title..." rows="5" id="comment"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="comment">content:</label>
+      <textarea type="text" class="form-control" [(ngModel)]="post.content" formControlName="content"
+                placeholder="enter content..." rows="5" id="content"></textarea>
+    </div>
+
+    <div style="margin-bottom: 20px">
+      <button type="submit" class="btn btn-primary">submit</button>
+    </div>
+
+
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
